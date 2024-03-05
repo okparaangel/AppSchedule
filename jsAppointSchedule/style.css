@@ -1,0 +1,76 @@
+body{
+    background-color: black ; 
+    color: rgb(203, 200, 196); 
+    display: flex ; 
+    justify-content: center; 
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+#text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+button{
+border-radius: 5px;
+background-color: rgb(232, 215, 247);
+color: rgb(25, 23, 23);
+cursor: pointer;
+text-transform: capitalize;
+font-size: 20px; 
+font-weight: 600; 
+border: none; 
+padding: 5px 10px;
+margin-top: 20px;
+} 
+img{
+    width: 300px;
+    height: 300px;
+}
+/* #form{
+    background-color: black ; 
+    color: rgb(37, 32, 32)
+    display: flex ; 
+    justify-content: center; 
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+
+}  */
+.container{
+    width: 50% ;
+    padding-top: 30px;
+} 
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+} 
+.col{
+    float: left; 
+    width: 50%;
+}
+label{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+input{
+    padding: 7px 0 7px 7px;
+    border-radius: 5px;
+    width: 270px;
+}
+select{
+    padding: 7px 0 7px 7px;
+    border-radius: 5px;
+    width: 285px;
+}

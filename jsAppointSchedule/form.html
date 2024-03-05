@@ -1,0 +1,221 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../jsAppointSchedule/style.css">
+    <title>Document</title>
+</head>
+<body>
+  <div>
+
+    <h1> APPOINTMENT SCHEDULE</h1>
+      <form id="appointmentForm">
+          <div>
+            <h2>Please fill in your informations below.</h2>
+          </div>
+          <div>
+              <label for="name">Name</label> <br />
+              <input
+                type="text"
+                name="name" 
+                id="clientname"
+                placeholder="what is your name?" 
+              />
+              <br> <br>
+              <span id="errorMessage"></span>
+            </div>
+
+            <div>
+              <label for="">Contact</label> <br />
+              <input
+                type="tel"
+                name="phone"
+                id="phoneNumber"
+                placeholder="input your mobile number"
+              />
+              <br> <br>
+              <span id="errorMessage"></span>
+            </div>
+
+            <div>
+              <label for="">Email</label> <br />
+              <input
+                type="text"
+                name="email"
+                id="EmailAddress"
+                placeholder="type in your Email?"
+              /> <br><br>
+               <span id="errorMessage"></span>
+            </div>
+
+            <div>
+              <label for="">HomeAddress</label> <br />
+              <input
+                type="text"
+                name="address"
+                id="Address"
+                placeholder="type in your current address?"
+              />
+              <br> <br>
+              <span id="errorMessage"></span>
+            </div> 
+
+            <div>
+              <label for="">Purpose of consultation</label> <br />
+              <select name="purpose" id="purpose">
+                <option value=""></option>
+                <option value="career">career</option>
+                <option value="growth">growth</option>
+                <option value="change of profession">change of profession</option>
+              </select> <br> <br>
+            </div>
+          
+            <div>
+              <label for="">AppointmentDate</label> <br />
+              <input type= "datetime-local" name="" id="date" />
+              <br> <br>
+            </div>
+
+            <div>
+              <label for="">AvailableCounsellor</label> <br />
+              <select name="counsellor" id="counselors">
+                <option value=""></option>
+                <option value="1">counsellor1</option>
+                <option value="2">counsellor2</option> 
+                <option value="3">counsellor2</option>
+              </select> <br> <br>
+            </div>
+          
+            <div>
+               <label for="Note">Brief Note</label> <br />
+              <input
+                type="text"
+                name="note"
+                id="Note"
+                placeholder="Enter Brief Note For More"
+              /> <br> <br>
+              <span id="errorMessage"></span>
+            </div> 
+            <button type="submit"> Schedule Appointment</button>
+
+              
+      </form>
+
+
+
+  </div>  
+    <script src="./js/script.js"></script>
+</body>
+</html>  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <form class="container">
+    <h1> APPOINTMENT SCHEDULE</h1>
+    <div>
+      <h2>Please fill in your informations below.</h2>
+    </div>
+    <div class="row">
+      <div class="col">
+        <label for="name">
+          FULL NAME
+          <input type="text" placeholder="Enter full name" id="name" />
+        </label>
+        <p id="name_err"></p>
+      </div>
+      <!-- <label for="name">FULL NAME</label>
+      <input type="text" placeholder="Enter Full Name" id="name">
+      <p id="name_err"></p> -->
+
+
+      <div class="col">
+        <label for="">
+          NUMBER
+          <input type="tel" placeholder="enter Number" id="number" />
+        </label>
+        <p id="num_err"></p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <label for="">
+          EMAIL
+          <input type="text" placeholder="enter email " id="email" />
+        </label>
+        <p id="email_err"></p>
+      </div>
+      <div class="col">
+        <label for="">
+          ADDRESS
+          <input type="text" placeholder="enter home address" id="address" />
+        </label>
+        <p id="add_err"></p>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col">
+        <label for="">
+          PURPOSE
+          <select name="purpose" id="purpose">
+            <option value="">Select</option>
+            <option value="career">career</option>
+            <option value="growth">growth</option>
+            <option value="changeOfProfession">change of profession</option>
+          </select>
+        </label>
+        <p id="purp_err"></p>
+      </div>
+      <div class="col">
+        <label for="">
+          APPOINTMENT
+          <input type="datetime-local" placeholder="enter appointment date and time" id="datetime" />
+        </label>
+        <p id="datetime_err"></p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <Label>
+          AVAILABLE COUNSELOR
+          <select name="counselor" id="counselors">
+            <option value="">Select</option>
+            <option value="1">counselor1</option>
+            <option value="2">counselor2</option>
+            <option value="3">counselor2</option>
+          </select>
+        </LAbel> 
+        <p id="counselor_err"></p>
+      </div>
+      <div class="col">
+        <Label>
+          NOTE
+          <input type="text" placeholder="brief note" id="note" />
+        </Label> 
+        <p id="note_err"></p>
+      </div>
+    </div>
+
+
+    <button id="btn" type="button" onclick="validate()">submit</button>
+
+  </form>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
